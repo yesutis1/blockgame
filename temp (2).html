@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas{ background-color: #f1f1f1;}
+    </style>
+</head>
+<body>
+    <!-- <canvas width="480" height="270" id="myCanvas">당신의 브라우져는 캔버스를 지원하지 않습니다</canvas> -->
+
+    <script>
+        var timer;
+        function ts(){
+            timer = setInterval(addNum, 1000);
+        }
+        function te(){
+            clearInterval(timer);
+        }
+        var i = 0;
+        function addNum(){
+            console.log(i++);
+        } 
+    </script>
+    <button onclick="ts()">timer start</button>
+    <button onclick="te()">timer stop</button>
+</body>
+</html>

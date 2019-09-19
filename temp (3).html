@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var key = null;
+        var interval = setInterval(update, 1000);   //update함수를 계속 불러옴
+        document.onkeydown = function(e){
+            // console.log(e.keyCode);
+            key = e.keyCode;
+        }   // 키보드를 누르면 누른 키번호를 key 변수에 저장
+        document.onkeyup = function(e){
+            console.log(e.keyCode,"키보드에 손을 뗏습니다.");
+            key = false;
+        }   // 키보드누르기를 그만두면 key 변수에 false를 입력, 메시지 출력
+        function update(){
+            // if(key === true){} 와 같음   
+            if(key){
+                console.log(key,"키보드를 눌렀습니다.");
+            }
+        }   // key값이 참이면(값이 있으면) key값을 보여주고, 메시지 출력
+    </script>
+</body>
+</html>

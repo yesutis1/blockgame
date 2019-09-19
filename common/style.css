@@ -1,4 +1,10 @@
 canvas {
   background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+}
+
+.controll {
+  text-align: center;
+  width: 480px;
 }
 /*# sourceMappingURL=style.css.map */
